@@ -1,0 +1,534 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Assets/Materials/Dirt1.material" type="Material" id=1]
+[ext_resource path="res://Assets/Materials/Dirt2.material" type="Material" id=2]
+[ext_resource path="res://Assets/Materials/Grass1.material" type="Material" id=3]
+[ext_resource path="res://Assets/Materials/Grass2.material" type="Material" id=4]
+[ext_resource path="res://Assets/Materials/Grass3.material" type="Material" id=5]
+[ext_resource path="res://Assets/Materials/Grass4.material" type="Material" id=6]
+[ext_resource path="res://Assets/Materials/soil1.material" type="Material" id=7]
+[ext_resource path="res://Assets/Materials/soil2.material" type="Material" id=8]
+[ext_resource path="res://Assets/Materials/soil3.material" type="Material" id=9]
+[ext_resource path="res://Assets/Materials/soil4.material" type="Material" id=10]
+
+
+
+
+
+
+
+
+
+
+
+[sub_resource type="PlaneMesh" id=1]
+
+material = ExtResource( 1 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="ConvexPolygonShape" id=17]
+
+points = PoolVector3Array( 2, 0, 2, -2, 0, 2, 2, 0, -2, -2, 0, -2 )
+
+[sub_resource type="PlaneMesh" id=3]
+
+material = ExtResource( 2 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="ConvexPolygonShape" id=4]
+
+points = PoolVector3Array( 2, 0, 2, -2, 0, 2, 2, 0, -2, -2, 0, -2 )
+
+[sub_resource type="PlaneMesh" id=5]
+
+material = ExtResource( 3 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="PlaneMesh" id=6]
+
+material = ExtResource( 4 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="PlaneMesh" id=7]
+
+material = ExtResource( 5 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="PlaneMesh" id=8]
+
+material = ExtResource( 6 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="PlaneMesh" id=9]
+
+material = ExtResource( 7 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="ConvexPolygonShape" id=10]
+
+points = PoolVector3Array( 2, 0, 2, -2, 0, 2, 2, 0, -2, -2, 0, -2 )
+
+[sub_resource type="PlaneMesh" id=11]
+
+material = ExtResource( 8 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="PlaneMesh" id=12]
+
+material = ExtResource( 9 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="ConvexPolygonShape" id=13]
+
+points = PoolVector3Array( 2, 0, 2, -2, 0, 2, 2, 0, -2, -2, 0, -2 )
+
+[sub_resource type="PlaneMesh" id=14]
+
+material = ExtResource( 10 )
+size = Vector2( 4, 4 )
+subdivide_width = 0
+subdivide_depth = 0
+
+[sub_resource type="Environment" id=16]
+
+background_mode = 0
+background_sky_custom_fov = 0.0
+background_color = Color( 0, 0, 0, 1 )
+background_energy = 1.0
+background_canvas_max_layer = 0
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 1.0
+ambient_light_sky_contribution = 1.0
+fog_enabled = false
+fog_color = Color( 0.5, 0.6, 0.7, 1 )
+fog_sun_color = Color( 1, 0.9, 0.7, 1 )
+fog_sun_amount = 0.0
+fog_depth_enabled = true
+fog_depth_begin = 10.0
+fog_depth_curve = 1.0
+fog_transmit_enabled = false
+fog_transmit_curve = 1.0
+fog_height_enabled = false
+fog_height_min = 0.0
+fog_height_max = 100.0
+fog_height_curve = 1.0
+tonemap_mode = 0
+tonemap_exposure = 1.0
+tonemap_white = 1.0
+auto_exposure_enabled = false
+auto_exposure_scale = 0.4
+auto_exposure_min_luma = 0.05
+auto_exposure_max_luma = 8.0
+auto_exposure_speed = 0.5
+ss_reflections_enabled = false
+ss_reflections_max_steps = 64
+ss_reflections_fade_in = 0.15
+ss_reflections_fade_out = 2.0
+ss_reflections_depth_tolerance = 0.2
+ss_reflections_roughness = true
+ssao_enabled = false
+ssao_radius = 1.0
+ssao_intensity = 1.0
+ssao_radius2 = 0.0
+ssao_intensity2 = 1.0
+ssao_bias = 0.01
+ssao_light_affect = 0.0
+ssao_color = Color( 0, 0, 0, 1 )
+ssao_quality = 0
+ssao_blur = 3
+ssao_edge_sharpness = 4.0
+dof_blur_far_enabled = false
+dof_blur_far_distance = 10.0
+dof_blur_far_transition = 5.0
+dof_blur_far_amount = 0.1
+dof_blur_far_quality = 1
+dof_blur_near_enabled = false
+dof_blur_near_distance = 2.0
+dof_blur_near_transition = 1.0
+dof_blur_near_amount = 0.1
+dof_blur_near_quality = 1
+glow_enabled = false
+glow_levels/1 = false
+glow_levels/2 = false
+glow_levels/3 = true
+glow_levels/4 = false
+glow_levels/5 = true
+glow_levels/6 = false
+glow_levels/7 = false
+glow_intensity = 0.8
+glow_strength = 1.0
+glow_bloom = 0.0
+glow_blend_mode = 2
+glow_hdr_threshold = 1.0
+glow_hdr_scale = 2.0
+glow_bicubic_upscale = false
+adjustment_enabled = false
+adjustment_brightness = 1.0
+adjustment_contrast = 1.0
+adjustment_saturation = 1.0
+_sections_unfolded = [ "Ambient Light" ]
+
+[node name="SoilTextures" type="Spatial" index="0"]
+
+[node name="Dirt1" type="MeshInstance" parent="." index="0"]
+
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 5, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 1 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Dirt1" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt1/StaticBody" index="0"]
+
+shape = SubResource( 17 )
+disabled = false
+
+[node name="Dirt2" type="MeshInstance" parent="." index="1"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 5, 0, 9 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 3 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Dirt2" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt2/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="Grass1" type="MeshInstance" parent="." index="2"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -13, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 5 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Grass1" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Grass1/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="Grass2" type="MeshInstance" parent="." index="3"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 6 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Grass2" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Grass2/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="Grass3" type="MeshInstance" parent="." index="4"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -13, 0, 9 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 7 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Grass3" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Grass3/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="Grass4" type="MeshInstance" parent="." index="5"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, 9 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 8 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Grass4" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Grass4/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="Ground1" type="MeshInstance" parent="." index="6"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 14, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 9 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Ground1" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground1/StaticBody" index="0"]
+
+shape = SubResource( 10 )
+disabled = false
+
+[node name="Ground2" type="MeshInstance" parent="." index="7"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 23, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 11 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Ground2" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground2/StaticBody" index="0"]
+
+shape = SubResource( 10 )
+disabled = false
+
+[node name="Ground3" type="MeshInstance" parent="." index="8"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 14, 0, 9 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 12 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Ground3" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground3/StaticBody" index="0"]
+
+shape = SubResource( 13 )
+disabled = false
+
+[node name="Ground4" type="MeshInstance" parent="." index="9"]
+
+editor/display_folded = true
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 23, 0, 9 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 14 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform", "material" ]
+
+[node name="StaticBody" type="StaticBody" parent="Ground4" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground4/StaticBody" index="0"]
+
+shape = SubResource( 13 )
+disabled = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="10"]
+
+environment = SubResource( 16 )
+
+
